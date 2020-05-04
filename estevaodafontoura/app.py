@@ -1,6 +1,6 @@
 from flask import Flask
 
-from ArtBlogWaddle.ext import configuration
+from estevaodafontoura.ext import configuration
 
 
 def minimal_app(**config):

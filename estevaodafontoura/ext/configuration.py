@@ -1,5 +1,4 @@
 from importlib import import_module
-
 from dynaconf import FlaskDynaconf
 
 
