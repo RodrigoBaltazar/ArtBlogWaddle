@@ -13,5 +13,5 @@ def load_extensions(app):
         getattr(ext, factory)(app)
 
 
-def init_app(app):
-    FlaskDynaconf(app)
+def init_app(app, **config):
+    FlaskDynaconf(app, **config)
