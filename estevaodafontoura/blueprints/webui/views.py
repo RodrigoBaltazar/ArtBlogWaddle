@@ -1,14 +1,15 @@
 from flask import abort, render_template
-from estevaodafontoura.models import Posts
+#from pydaria.models import Product
 
 
 def index():
-    posts = Posts.query.all()
-    return render_template("index.html", posts=posts)
+    #products = Product.query.all()
+    return render_template("index.html")
+    #return render_template("index.html", products=products)
 
 
-def post(post_id):
-    post = Post.query.filter_by(id=post_id).first() or abort( #talvez o Post seja Posts nesta linha bem a esquerda
-        404, "post nao encontrado"
-    )
-    return render_template("post.html", post=post)
+# def product(product_id):
+#     product = Product.query.filter_by(id=product_id).first() or abort(
+#         404, "produto nao encontrado"
+#     )
+#     return render_template("product.html", product=product)
