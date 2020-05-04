@@ -1,0 +1,14 @@
+
+{% extends "index.html" %}
+{% block content %}
+<div class="container">
+<h1>{{ post.name }}</h1>
+
+<div class="jumbotron">
+<h2>R$ {{ "%0.2f" | format(post.price)}}</h2>
+<p>
+    {{post.description}}
+</p>
+</div>
+</div>
+{% endblock %}
