@@ -1,0 +1,60 @@
+{% from 'bootstrap/nav.html' import render_nav_item %}
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Site do artista Estevão da Fontoura">
+    <meta name="author" content="Rodrigo Baltazar">
+    <link rel="icon" href="../../favicon.ico">
+
+    
+      {% block styles %}
+      <!-- Bootstrap CSS -->
+        {{ bootstrap.load_css() }}
+      {% endblock %}
+    {% endblock %}
+  </head>
+
+<body>
+  {% block navbar %}
+  <div class="container">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <a class="text-muted" href="#">Inscreva-se</a>
+        </div>
+        <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="#">Estevão da Fontoura</a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="btn btn-sm btn-outline-secondary" href="#">Sign in</a>
+        </div>
+      </div>
+    </header>
+  
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="#">PORTFOLIO</a>
+        <a class="p-2 text-muted" href="#">VÍDEOS</a>
+        <a class="p-2 text-muted" href="#">TEXTOS</a>
+        <a class="p-2 text-muted" href="#">PROJETOS</a>
+        <a class="p-2 text-muted" href="#">EXPOSIÇÕES</a>
+        <a class="p-2 text-muted" href="#">CLIPPING</a>
+        <a class="p-2 text-muted" href="#">SOBRE</a>
+        <a class="p-2 text-muted" href="#">OPÇÃO1</a>
+        <a class="p-2 text-muted" href="#">OPÇÃO2</a>
+        <a class="p-2 text-muted" href="#">OPÇÃO3</a>
+        <a class="p-2 text-muted" href="#">OPÇÃO4</a>
+        <a class="p-2 text-muted" href="#">OPÇÃO5</a>
+      </nav>
+    </div>
+  {% endblock %}
+
+  
+</body>
+</html>
