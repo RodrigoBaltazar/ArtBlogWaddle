@@ -16,6 +16,7 @@
       {% block styles %}
       <!-- Bootstrap CSS -->
         {{ bootstrap.load_css() }}
+        {{ bootstrap.load_js() }}
       {% endblock %}
     {% endblock %}
   </head>
@@ -36,25 +37,33 @@
         </div>
       </div>
     </header>
-  
-    <div class="nav-scroller py-1 mb-2">
-      <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-muted" href="#">PORTFOLIO</a>
-        <a class="p-2 text-muted" href="#">VÍDEOS</a>
-        <a class="p-2 text-muted" href="#">TEXTOS</a>
-        <a class="p-2 text-muted" href="#">PROJETOS</a>
-        <a class="p-2 text-muted" href="#">EXPOSIÇÕES</a>
-        <a class="p-2 text-muted" href="#">CLIPPING</a>
-        <a class="p-2 text-muted" href="#">SOBRE</a>
-        <a class="p-2 text-muted" href="#">OPÇÃO1</a>
-        <a class="p-2 text-muted" href="#">OPÇÃO2</a>
-        <a class="p-2 text-muted" href="#">OPÇÃO3</a>
-        <a class="p-2 text-muted" href="#">OPÇÃO4</a>
-        <a class="p-2 text-muted" href="#">OPÇÃO5</a>
-      </nav>
-    </div>
+  <!-- Inicio Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PORTFOLIO
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SOBRE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">OPÇÃO_EXTRA</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
   {% endblock %}
-
+<!-- Fim navbar -->
   
 </body>
 </html>
