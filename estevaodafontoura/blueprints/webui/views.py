@@ -13,3 +13,7 @@ def index():
 #         404, "produto nao encontrado"
 #     )
 #     return render_template("product.html", product=product)
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.get(user_id)
